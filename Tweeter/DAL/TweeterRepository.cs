@@ -15,6 +15,14 @@ namespace Tweeter.DAL
 
         public TweeterRepository() {}
 
+        internal bool UsernameExists(string candidate)
+        {
+            throw new NotImplementedException();
+        }
 
+        internal IEnumerable<string> GetUserNames()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
