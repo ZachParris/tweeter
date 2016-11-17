@@ -46,5 +46,20 @@ namespace Tweeter.DAL
             return false;
             
         }
+
+        public Tweet AddATweet(Tweet new_tweet)
+        {
+            return Context.Tweets.Add(new_tweet);
+        }
+
+        public void RemoveTweet(List<Tweet> tweets, object selected_tweet)
+        {
+            return Context.Tweets.Remove(t => t.TweetId.);
+        }
+
+        public void AddATweet(string v1, string v2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
