@@ -21,6 +21,7 @@ namespace Tweeter
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Content/font-awesome.css",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(

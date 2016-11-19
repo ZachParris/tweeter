@@ -80,9 +80,14 @@ namespace Tweeter.DAL
             return found_tweet;
         }
 
-        public List<Tweet> GetTweets()
+        public List<Tweet> GetAllTweets()
         {
             return Context.Tweets.ToList();
+        }
+
+        public Twit GetTwitById(int user_id)
+        {
+            return Context.TweeterUsers.FirstOrDefault(t => t.TwitId == user_id);
         }
     }
 }
