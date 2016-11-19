@@ -18,7 +18,7 @@ namespace Tweeter.Controllers
         // GET api/<controller>
         public IEnumerable<Tweet> Get()
         {
-            return Repo.GetTweets();
+            return Repo.GetAllTweets();
         }
 
         // GET api/<controller>/5
@@ -43,6 +43,7 @@ namespace Tweeter.Controllers
                     Author = found_user,
                     CreatedAt = DateTime.Now
                 };
+
                 Repo.AddTweet(new_tweet);
             }
             
